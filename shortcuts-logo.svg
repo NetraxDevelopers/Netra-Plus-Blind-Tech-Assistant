@@ -1,0 +1,17 @@
+<svg width="512" height="512" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background: White -->
+    <rect width="108" height="108" fill="#F5F5F5"/>
+
+    <!-- Bottom Key (Grey) -->
+    <path fill="#BDBDBD" d="M38,28 h40 c4,0 8,4 8,8 v36 h6 v-36 c0,-7 -6,-13 -13,-13 h-41 z"/>
+
+    <!-- Middle Key (Blue) -->
+    <path fill="#448AFF" d="M30,36 h40 c4,0 8,4 8,8 v36 h6 v-36 c0,-7 -6,-13 -13,-13 h-41 z"/>
+
+    <!-- Top Key (Purple) -->
+    <path fill="#6200EA" d="M22,44 h46 c5.5,0 10,4.5 10,10 v30 c0,5.5 -4.5,10 -10,10 h-46 c-5.5,0 -10,-4.5 -10,-10 v-30 c0,-5.5 4.5,-10 10,-10 z"/>
+
+    <!-- Symbol: </> -->
+    <path fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M38,62 l-6,7 l6,7 M52,62 l6,7 l-6,7"/>
+    <path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" d="M48,58 L42,80"/>
+</svg>

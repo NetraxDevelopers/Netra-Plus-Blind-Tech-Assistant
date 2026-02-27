@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netra Plus – Smart Blind Tech Assistant</title>
+    <meta name="description"
+        content="Netra Plus empowers blind and visually impaired users with smart AI tools like Object Detection, OCR, and more for complete digital independence.">
+
+    <!-- SEO Keyword Optimization for Google Search -->
+    <meta name="keywords"
+        content="Blind Accessibility App, AI Assistant App, Object Detection App, OCR Reader App, Android Accessibility App, Visually Impaired Tools, NetraX Developers, Talking Calculator Vision+, Computer Shortcuts+ Pro">
+
+    <!-- Open Graph tags for better previews when shared on WhatsApp/Social Media -->
+    <meta property="og:title" content="Netra Plus – Smart Blind Tech Assistant">
+    <meta property="og:description"
+        content="AI tools designed specifically for the blind and visually impaired. Object detection, OCR, and accessible utilities.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark">
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-to-content" aria-label="Skip to main content">Skip to content</a>
+
+    <header role="banner" class="sticky-header">
+        <nav aria-label="Main Navigation" class="container navbar">
+            <div class="logo">
+                <a href="#" aria-label="NetraX Developers Home">
+                    <img src="netrax-logo.jpeg" alt="NetraX Developers Banner"
+                        style="height: 55px; width: auto; max-width: 280px; vertical-align: middle; object-fit: contain;">
+                </a>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" aria-label="Go to About Section">About</a></li>
+                <li><a href="#features" aria-label="Go to Features Section">Features</a></li>
+                <li><a href="#apps" aria-label="Go to Apps Section">Apps</a></li>
+                <li><a href="#business" aria-label="Go to Developers Section">Developers</a></li>
+                <li><a href="#contact" aria-label="Go to Contact Section">Contact</a></li>
+            </ul>
+
+            <div class="accessibility-toolbar" aria-label="Accessibility Tools" role="toolbar">
+                <button class="a11y-btn" id="voice-intro-btn" aria-label="Play welcome voice message"
+                    title="Voice Intro">
+                    <i class="fas fa-volume-up" aria-hidden="true"></i>
+                </button>
+                <button class="a11y-btn" id="theme-toggle" aria-label="Toggle Light/Dark Mode" aria-pressed="true"
+                    title="Toggle Theme">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button>
+                <button class="a11y-btn" id="high-contrast-toggle" aria-label="Toggle High Contrast Mode"
+                    aria-pressed="false" title="High Contrast">
+                    <i class="fas fa-adjust" aria-hidden="true"></i>
+                </button>
+                <button class="a11y-btn" id="large-text-toggle" aria-label="Toggle Large Text Size" aria-pressed="false"
+                    title="Large Text">
+                    <i class="fas fa-text-height" aria-hidden="true"></i>
+                </button>
+                <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links"
+                    aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-bg">
+                <div class="gradient-sphere gradient-1"></div>
+                <div class="gradient-sphere gradient-2"></div>
+            </div>
+            <div class="container hero-content">
+                <h1 id="hero-title" class="fade-in-up">Netra Plus – <br><span class="gradient-text">Smart Blind Tech
+                        Assistant</span></h1>
+                <p class="hero-subtitle fade-in-up delay-1">Empowering blind and visually impaired users with smart AI
+                    tools for an independent digital life.</p>
+                <div class="action-buttons fade-in-up delay-2">
+                    <a href="https://play.google.com/store/apps/details?id=com.netrax.plus" class="btn btn-primary"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="Download Netra Plus on Play Store (Opens in new tab)">
+                        <i class="fab fa-google-play" aria-hidden="true"></i> Download on Play Store
+                    </a>
+                    <a href="#features" class="btn btn-secondary" aria-label="Explore Netra Plus Features">Explore
+                        Features</a>
+                    <a href="#contact" class="btn btn-outline" aria-label="Contact Netra X Developers">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about-section fade-in-up" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" class="section-title">About Our Mission</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Netra Plus is built with one core purpose: to help blind and visually impaired individuals
+                            use smartphones with total independence. By focusing heavily on digital accessibility, we
+                            ensure no one is left behind in the tech revolution.</p>
+                        <p>Through our advanced AI-powered tools, users can seamlessly navigate apps, understand their
+                            environment, read documents, and stay safe. Netra Plus gives you the digital independence
+                            you deserve.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section id="features" class="features-section" aria-labelledby="features-title">
+            <div class="container">
+                <h2 id="features-title" class="section-title">AI-Powered Features</h2>
+                <div class="small-features-grid is-collapsed" id="features-grid">
+
+                    <article class="small-feature-card fade-in-up" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-compass"></i></div>
+                        <h3>Netra Guide</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-1" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-camera"></i></div>
+                        <h3>Talking Camera & Selfie Guide</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-2" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-money-bill-wave"></i></div>
+                        <h3>Cash Reader (Currency Identifier)</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-book-reader"></i></div>
+                        <h3>Instant Reader (Text Scanner)</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-1" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-file-alt"></i></div>
+                        <h3>Image Text OCR</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-2" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-qrcode"></i></div>
+                        <h3>QR Code Scanner & Generator</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-calculator"></i></div>
+                        <h3>Talking Voice Calculator</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-1" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-clock"></i></div>
+                        <h3>Talking Clock & Alarm</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-2" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-bell"></i></div>
+                        <h3>Voice Reminder</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-battery-full"></i></div>
+                        <h3>Battery Announcer</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-1" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-phone-volume"></i></div>
+                        <h3>Call & SMS Announcer</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-2" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-play-circle"></i></div>
+                        <h3>Media Player</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-sticky-note"></i></div>
+                        <h3>Smart Notes</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-1" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-volume-up"></i></div>
+                        <h3>Text to Audio</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-2" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-microphone"></i></div>
+                        <h3>Speech to Text</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-microphone-alt"></i></div>
+                        <h3>Voice Notes</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-1" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-file-export"></i></div>
+                        <h3>Text to File</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-2" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-chart-bar"></i></div>
+                        <h3>Text Analyzer</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-exchange-alt"></i></div>
+                        <h3>File Converting Tools</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-1" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-photo-video"></i></div>
+                        <h3>Audio & Video Tools</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-2" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-file-pdf"></i></div>
+                        <h3>Image to PDF</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-book"></i></div>
+                        <h3>PDF Reader</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-1" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-unlock-alt"></i></div>
+                        <h3>PDF Password Remover</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-2" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-language"></i></div>
+                        <h3>Voice Translator</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-coins"></i></div>
+                        <h3>Currency Converter</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-1" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-code"></i></div>
+                        <h3>Code Runner</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up delay-2" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-keyboard"></i></div>
+                        <h3>Computer Shortcut Keys</h3>
+                    </article>
+
+                    <article class="small-feature-card fade-in-up" tabindex="0">
+                        <div class="feature-icon" aria-hidden="true"><i class="fas fa-lock"></i></div>
+                        <h3>Encrypt & Decrypt Files</h3>
+                    </article>
+
+                </div>
+
+                <div class="features-toggle-container fade-in-up delay-2">
+                    <button id="toggle-features-btn" class="btn btn-secondary" aria-expanded="false"
+                        aria-controls="features-grid">
+                        Show More Features <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- APPS SECTION -->
+        <section id="apps" class="apps-section" aria-labelledby="apps-title">
+            <div class="container">
+                <h2 id="apps-title" class="section-title">Our Applications</h2>
+                <div class="apps-grid">
+
+                    <div class="app-card fade-in-up" tabindex="0">
+                        <div class="app-icon" aria-hidden="true"
+                            style="padding: 0; background: none; box-shadow: none;">
+                            <img src="logo.jpeg" alt="Netra Plus App Logo"
+                                style="width: 100%; border-radius: 12px; height: auto;">
+                        </div>
+                        <div class="app-details">
+                            <h3>Netra Plus-Blind Tech Assistant</h3>
+                            <p>The ultimate Blind Tech Assistant featuring OCR, Object Detection, and more.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.netrax.plus" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-sm btn-primary"
+                                aria-label="Download Netra Plus-Blind Tech Assistant on Google Play (Opens in new tab)"><i
+                                    class="fab fa-google-play"></i> Install App</a>
+                        </div>
+                    </div>
+
+                    <div class="app-card fade-in-up delay-1" tabindex="0">
+                        <div class="app-icon" aria-hidden="true"
+                            style="padding: 0; background: none; box-shadow: none;">
+                            <img src="talking-calculator-logo.jpeg" alt="Talking Calculator Vision+ App Logo"
+                                style="width: 100%; border-radius: 12px; height: auto;">
+                        </div>
+                        <div class="app-details">
+                            <h3>Talking Calculator Vision+</h3>
+                            <p>An accessible calculator that speaks numbers and results out loud.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.talkingcalculator"
+                                target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"
+                                aria-label="Download Talking Calculator Vision+ on Google Play (Opens in new tab)"><i
+                                    class="fab fa-google-play"></i> Install App</a>
+                        </div>
+                    </div>
+
+                    <div class="app-card fade-in-up delay-2" tabindex="0">
+                        <div class="app-icon" aria-hidden="true"
+                            style="padding: 0; background: none; box-shadow: none;">
+                            <img src="shortcuts-logo.svg" alt="Computer Shortcuts+ Pro App Logo"
+                                style="width: 100%; border-radius: 12px; height: auto;">
+                        </div>
+                        <div class="app-details">
+                            <h3>Computer Shortcuts+ Pro</h3>
+                            <p>Quick access controls and macros designed for screen-reader users.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.netrax.shortcuthubplus"
+                                target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"
+                                aria-label="Download Computer Shortcuts+ Pro on Google Play (Opens in new tab)"><i
+                                    class="fab fa-google-play"></i> Install App</a>
+                        </div>
+                    </div>
+
+                    <div class="app-card fade-in-up" tabindex="0">
+                        <div class="app-icon" aria-hidden="true"
+                            style="padding: 0; background: none; box-shadow: none;">
+                            <img src="interest-calculator-logo.jpeg" alt="Interest Calculator App Logo"
+                                style="width: 100%; border-radius: 12px; height: auto;">
+                        </div>
+                        <div class="app-details">
+                            <h3>Interest Calculator</h3>
+                            <p>Accessible financial tool for calculating simple and compound interest.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.netrax.interestcalculator"
+                                target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary"
+                                aria-label="Download Interest Calculator on Google Play (Opens in new tab)"><i
+                                    class="fab fa-google-play"></i> Install App</a>
+                        </div>
+                    </div>
+
+                    <div class="app-card fade-in-up delay-1" tabindex="0">
+                        <div class="app-icon future-icon" aria-hidden="true"><i class="fas fa-rocket"></i></div>
+                        <div class="app-details">
+                            <h3>Future AI Tools</h3>
+                            <p>We are constantly developing new AI-powered accessible tools.</p>
+                            <a href="#" class="btn btn-sm btn-outline" aria-disabled="true">In Development</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- BUSINESS SECTION -->
+        <section id="business" class="business-section fade-in-up" aria-labelledby="business-title">
+            <div class="container business-container">
+                <div class="business-content">
+                    <h2 id="business-title" class="section-title">Netra X Developers</h2>
+                    <p class="business-lead">We build accessible AI applications.</p>
+                    <p>Focused on innovation, accessibility, and digital independence, our team bridges the gap between
+                        modern technology and the visually impaired community.</p>
+                    <p>We are always open to collaborations, partnerships, and ideas that can improve accessibility for
+                        everyone.</p>
+                    <div class="business-contact">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:netraplushelpdesk@gmail.com"
+                            aria-label="Email us at netraplushelpdesk@gmail.com">netraplushelpdesk@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONNECT & CONTACT SECTION (Combined layout) -->
+        <section id="contact" class="contact-section" aria-labelledby="contact-title">
+            <div class="container contact-wrapper">
+
+                <div class="social-media-card fade-in-up">
+                    <h2>Connect With Us</h2>
+                    <p>Join our community across various platforms.</p>
+                    <ul class="social-links" aria-label="Social Media Links">
+                        <li>
+                            <a href="https://youtube.com/@netraxinnovations?si=46Trf8cl8fsFv0xc" target="_blank"
+                                rel="noopener noreferrer" aria-label="Follow us on YouTube (Opens in new tab)">
+                                <i class="fab fa-youtube" aria-hidden="true"></i> YouTube
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://whatsapp.com/channel/0029Vb7gud0KGGGHWMFCzd2b" target="_blank"
+                                rel="noopener noreferrer" aria-label="Join our WhatsApp Channel (Opens in new tab)">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Channel
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/Netraplus" target="_blank" rel="noopener noreferrer"
+                                aria-label="Join our Telegram Channel (Opens in new tab)">
+                                <i class="fab fa-telegram-plane" aria-hidden="true"></i> Telegram Channel
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:netraplushelpdesk@gmail.com" aria-label="Send us an Email">
+                                <i class="fas fa-envelope" aria-hidden="true"></i> Email Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-form-card fade-in-up delay-1">
+                    <h2 id="contact-title">Contact Us</h2>
+                    <form id="contact-form" aria-label="Contact Form">
+                        <div class="form-group">
+                            <label for="from_name">Full Name</label>
+                            <input type="text" id="from_name" name="from_name" required aria-required="true"
+                                placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="from_email">Email Address</label>
+                            <input type="email" id="from_email" name="from_email" required aria-required="true"
+                                placeholder="Enter your email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="4" required aria-required="true"
+                                placeholder="Write your message here..."></textarea>
+                        </div>
+                        <div id="form-status" aria-live="polite"
+                            style="margin-bottom: 1rem; font-weight: bold; text-align: center; border-radius: 8px;">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit" aria-label="Submit Contact Form">Send
+                            Message <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Netra Plus-Blind Tech Assistant</h3>
+                <p>Developer Credit: Netra X Developers</p>
+            </div>
+            <div class="footer-links" aria-label="Footer Navigation">
+                <a href="privacy.html" aria-label="Read Privacy Policy">Privacy Policy</a>
+                <a href="terms.html" aria-label="Read Terms and Conditions">Terms & Conditions</a>
+                <a href="accessibility.html" aria-label="Read Accessibility Statement">Accessibility Statement</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Netra X Developers. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
